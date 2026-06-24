@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StandardOnly7 // Engine Command</title>
+    <style>
+        body { background: #0a0a0a; color: #d4af37; font-family: 'Courier New', monospace; padding: 20px; }
+        .container { max-width: 800px; margin: auto; border: 1px solid #1a3c6d; padding: 20px; }
+        .hook-card { border: 1px solid #d4af37; padding: 10px; margin: 10px 0; }
+        button { background: #0000ff; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>STANDARD ONLY 7 // ENGINE</h1>
+        <p>Status: System Online. Recursive Orchestrator Active.</p>
+        <button onclick="runEngine()">EXECUTE WORKFLOW</button>
+        
+        <h2>THUMBNAIL ASSET PREVIEW</h2>
+        <div id="previewArea"></div>
+    </div>
+
+    <script>
+        const prompts = [
+            {"hook": "WHY YOU'RE STUCK", "visual": "Shook expression, head in hands, chaotic spreadsheets..."},
+            {"hook": "THE HUSTLE MYTH", "visual": "Character running on a treadmill that is going nowhere..."},
+            {"hook": "STOP OVERTHINKING", "visual": "A single lightbulb glowing vs. a brain tangled in knots..."},
+            {"hook": "396 HZ: FEAR KILLER", "visual": "Character emitting red energy waves..."},
+            {"hook": "GUILTY WANTING MORE?", "visual": "Angel and demon on shoulders, character looking at gold..."}
+        ];
+
+        function runEngine() {
+            alert("Orchestrating workflow...");
+            console.log("StandardOnly7 engine engaged.");
+        }
+
+        const container = document.getElementById('previewArea');
+        prompts.forEach(p => {
+            container.innerHTML += `<div class='hook-card'><strong>${p.hook}</strong><br>${p.visual}</div>`;
+        });
+    </script>
+</body>
+</html>
