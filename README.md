@@ -1,0 +1,1 @@
+# standatdonly7command
